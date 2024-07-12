@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+nav {
+  width: 100%;
+  color: #181725;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 10; */
+  background: white;
+  /* position: relative; */
+}
+
+.logo {
+  width: 95px;
+}
+
+nav ul {
+  display:flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.network {
+  color: #0165FA;
+}
+
+.btn {
+  background: #181725;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #181725;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+  nav ul li {
+    font-size: 14px;
+    margin: 0 15px;
+   
+  }
+  
+  .title, .titledesc, .title1 {
+    padding: 14px 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav ul li {
+    font-size: 14px;
+    margin: 0 10px;
+    align-items: center;
+  }
+  
+  .title, .titledesc, .title1 {
+    padding: 14px 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    align-items: center;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+  
+  .title, .titledesc, .title1 {
+    padding: 14px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title, .titledesc, .title1 {
+    padding: 14px 20px;
+  }
+}

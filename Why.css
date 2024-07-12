@@ -1,0 +1,35 @@
+.why{
+    padding-top: 162px;
+    display: flex;
+}
+
+.left-section{
+    background-color: #CDDBF2;
+    max-width: 659px;
+    padding-top: 209px;
+    padding-bottom: 177px;
+    padding-left: 100px;
+    padding-right: 90px;
+}
+
+.left-title{
+    color: #181725;
+    font-size: 32px;
+    font-family: Manrope;
+    font-weight: 500;
+    line-height: 44.80px;
+    letter-spacing: 0.32px;
+    padding-bottom: 24px;
+}
+
+.left-desc{
+    color: #181725;
+    font-size: 16px;
+    font-family: Helvetica Neue;
+    font-weight: 300;
+    line-height: 24px;
+}
+.why img{
+    width: 100%;
+}
+
